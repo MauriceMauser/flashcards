@@ -4,6 +4,8 @@
 
 ## To get up and running...
 
+Make sure [Expo](https://docs.expo.io/versions/v34.0.0/introduction/installation/) is set up on your machine.
+
 Install all dependencies via:
 
 ```
