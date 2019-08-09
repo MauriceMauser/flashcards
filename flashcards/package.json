@@ -15,4 +15,12 @@
     "redux": "4.0.4",
     "redux-thunk": "2.3.0"
   }
+},
+{
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+  }
 }
