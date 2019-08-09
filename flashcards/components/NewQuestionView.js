@@ -31,6 +31,10 @@ class NewQuestionView extends Component {
     await this.setState({ question: '', answer: '' });
     navigation.navigate('Overview');
   }
+  
+  shouldComponentUpdate(nextProps, nextState){
+     return (nextState.question != this.state.question) || (nextState.answer != this.state.answer);
+  }
 
   render() {
     const { decks, navigation, addCard } = this.props;
