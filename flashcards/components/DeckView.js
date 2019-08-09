@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, Text, Button } from 'react-native';
 import { connect } from 'react-redux';
 
-class DeckView extends Component {
-  render() {
-    const { decks, navigation } = this.props;
+const DeckView = ({ decks, navigation }) => {
     const { title, questions } = decks[navigation.state.params.title];
     return (
       <View
@@ -35,7 +33,6 @@ class DeckView extends Component {
         </View>
       </View>
     );
-  }
 }
 
 function mapStateToProps(decks) {
